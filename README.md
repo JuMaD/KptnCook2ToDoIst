@@ -37,7 +37,7 @@ This Python script is designed to fetch recipes from a specified URL (from Kapta
 4. **Set up Alfred Workflow**: Create a new Alfred workflow with a keyword trigger.
 Add a "Run Script" action with the following Bash command:  
     ```bash
-    /Users/julian/PycharmProjects/KptnCook2ToDoIst/.venv/bin/python /Users/julian/PycharmProjects/KptnCook2ToDoIst/.venv/KptnCook-Einkaufsliste.py "{query}"
+    /Users/USERNAME/PycharmProjects/KptnCook2ToDoIst/.venv/bin/python /Users/USERNAME/PycharmProjects/KptnCook2ToDoIst/.venv/KptnCook-Einkaufsliste.py "{query}"
      ``` 
    This will use the Python interpreter in the virtual environment to execute the script and pass the URL to the recipe as an argument.
 5**Run the Workflow**:
