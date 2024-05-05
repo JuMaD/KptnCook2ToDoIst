@@ -26,20 +26,21 @@ This Python script is designed to fetch recipes from a specified URL (from Kapta
 2. **Install Required Libraries**: Run the following `pip` commands to install the necessary libraries inside the virtual environment:
    ```bash
    pip install requests beautifulsoup4 todoist-api-python
-    Create a Configuration File: Create a file named config.json in the script directory to store the API key and project ID securely:
+3. **Create a Configuration File**: Create a file named config.json in the script directory to store the API key and project ID securely:
      ```json
         {
             "api_key": "YOUR_TODOIST_API_KEY",
             "shoppinglist_id": "YOUR_TODOIST_PROJECT_ID"
         }
      ```
-3. **Set up Alfred Workflow**: Create a new Alfred workflow with a keyword trigger.
+   You need the ID of the project you want to add the ingredients to NOT the name. You can get this through an API call (list all projects, then manually read out the ID)
+4. **Set up Alfred Workflow**: Create a new Alfred workflow with a keyword trigger.
 Add a "Run Script" action with the following Bash command:  
     ```bash
     /Users/julian/PycharmProjects/KptnCook2ToDoIst/.venv/bin/python /Users/julian/PycharmProjects/KptnCook2ToDoIst/.venv/KptnCook-Einkaufsliste.py "{query}"
      ``` 
    This will use the Python interpreter in the virtual environment to execute the script and pass the URL to the recipe as an argument.
-4. **Run the Workflow**:
+5**Run the Workflow**:
 Invoke Alfred and type the keyword to trigger the workflow.
 Provide the URL of the recipe page in the Alfred prompt and press enter.
 ## Script Details
