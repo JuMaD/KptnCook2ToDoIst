@@ -12,6 +12,7 @@ This Python script is designed to fetch recipes from a specified URL (from Kapta
 - PyCharm for setting up the virtual environment
 - Alfred for workflow automation
 - The following Python libraries:
+
   - `requests`
   - `beautifulsoup4`
   - `todoist-api-python`
